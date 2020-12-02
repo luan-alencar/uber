@@ -2,8 +2,8 @@ package david.augusto.luan.entidades;
 
 public class UberX extends Corrida {
 
-	public UberX(double km, double precoBase, double precoKm) {
-		super(km, precoBase, precoKm);
+	public UberX(double km) {
+		super(km, 4, 1.2);
 	}
 
 	public UberX() {
@@ -13,7 +13,7 @@ public class UberX extends Corrida {
 	@Override
 	public double getValor() {
 		// TODO Auto-generated method stub
-		return super.getValor();
+		return super.getPrecoBase() + super.getKm() * super.getPrecoKm();
 	}
 
 }
