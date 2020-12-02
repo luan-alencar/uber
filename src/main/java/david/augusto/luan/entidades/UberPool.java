@@ -20,7 +20,7 @@ public class UberPool extends Corrida {
 	@Override
 	public double getValor() {
 		// TODO Auto-generated method stub
-		return super.getValor();
+		return 0;
 	}
 
 }
