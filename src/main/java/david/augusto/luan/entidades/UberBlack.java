@@ -1,9 +1,9 @@
 package david.augusto.luan.entidades;
 
-public class UberBlack extends Corrida {
+public class UberBlack extends UberX {
 
-	public UberBlack(double km, double precoBase, double precoKm) {
-		super(km, precoBase, precoKm);
+	public UberBlack(double km) {
+		super(km);
 	}
 
 	public UberBlack() {
@@ -13,7 +13,7 @@ public class UberBlack extends Corrida {
 	@Override
 	public double getValor() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 1.1 * super.getValor();
 	}
 
 }

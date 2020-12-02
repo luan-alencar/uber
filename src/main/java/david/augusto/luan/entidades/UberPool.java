@@ -2,13 +2,13 @@ package david.augusto.luan.entidades;
 
 import lombok.Getter;
 
-public class UberPool extends Corrida {
+public class UberPool extends UberX {
 
 	@Getter
 	private int numPessoas;
 
-	public UberPool(double km, double precoBase, double precoKm, int numPessoas) {
-		super(km, precoBase, precoKm);
+	public UberPool(double km, int numPessoas) {
+		super(km);
 		this.numPessoas = numPessoas;
 		// TODO Auto-generated constructor stub
 	}
@@ -20,7 +20,7 @@ public class UberPool extends Corrida {
 	@Override
 	public double getValor() {
 		// TODO Auto-generated method stub
-		return 0;
+		return super.getValor() / getNumPessoas();
 	}
 
 }
