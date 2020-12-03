@@ -13,5 +13,5 @@ public abstract class Corrida {
 	private double precoBase;
 	private double precoKm;
 
-	public abstract  double getValor();
+	public abstract double getValor();
 }
