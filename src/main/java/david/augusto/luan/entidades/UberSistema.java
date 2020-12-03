@@ -18,6 +18,7 @@ public class UberSistema {
 		this.corridas.add(c);
 	}
 
+	// método que retorna o valor total das corridas
 	public double getValorCorridas() {
 		double valorTotal = 0;
 		for (Corrida c : corridas) {
