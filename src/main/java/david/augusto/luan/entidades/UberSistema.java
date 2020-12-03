@@ -15,7 +15,7 @@ public class UberSistema {
 	}
 
 	public void adicionarCorrida(Corrida c) {
-		corridas.add(c);
+		this.corridas.add(c);
 	}
 
 	public double getValorCorridas() {
