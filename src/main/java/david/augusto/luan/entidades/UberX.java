@@ -12,7 +12,6 @@ public class UberX extends Corrida {
 
 	@Override
 	public double getValor() {
-		// TODO Auto-generated method stub
 		return super.getPrecoBase() + super.getKm() * super.getPrecoKm();
 	}
 
